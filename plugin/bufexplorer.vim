@@ -453,6 +453,7 @@ function! s:MapKeys()
     nnoremap <script> <silent> <buffer> t             :call <SID>SelectBuffer("tab")<CR>
     nnoremap <script> <silent> <buffer> T             :call <SID>ToggleShowTabBuffer()<CR>
     nnoremap <script> <silent> <buffer> u             :call <SID>ToggleShowUnlisted()<CR>
+    map! <buffer> <silent> <C-cr> <cr><cr>
 
     for k in ["G", "n", "N", "L", "M", "H"]
         execute "nnoremap <buffer> <silent>" k ":keepjumps normal!" k."<CR>"
